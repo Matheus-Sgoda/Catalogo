@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --blue: #3048f0;
+    --darkgray: #464646;
+    --gray: #737373;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background: var(--darkgray);
+    padding-bottom: 30px;
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Navegação superior */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.brand {
+    font-size: 24px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.login a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.pesquisa {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.pesquisa h2 {
+    font-size: 16px;
+    color: #999;
+}
+
+.carrinho {
+    color: var(--blue);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Menu de navegação */
+.menu {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: var(--blue);
+    border-radius: 4px;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px 0;
+    text-align: center;
+    flex: 1;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #ddd;
+}
+
+/* Container de produtos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Cards de produto */
+.product-card {
+    width: 18%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.product-label {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .product-card {
+        width: 48%;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .pesquisa {
+        order: 5;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .menu ul li {
+        padding: 10px 0;
+    }
+}
