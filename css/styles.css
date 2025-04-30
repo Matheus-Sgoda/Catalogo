@@ -46,7 +46,6 @@ nav {
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 20px 0;
-    
 }
 
 .brand {
@@ -55,42 +54,43 @@ nav {
     cursor: pointer;
     text-decoration: underline;
 }
-.user{
-display: flex;
-flex-direction: column;
+
+.user {
+    display: flex;
+    flex-direction: column;
 }
-.user p{
+
+.user p {
     margin-bottom: 5px;
     font-size: 20px;
     color: whitesmoke;
-
 }
 
 .search-container {
     display: flex;
     margin: 20px 0;
-  }
-  
-  .search-input {
+}
+
+.search-input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
     width: 300px;
-  }
-  
-  .search-button {
+}
+
+.search-button {
     padding: 10px 15px;
     background-color: #4285f4;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-  }
-  
-  .search-button:hover {
+}
+
+.search-button:hover {
     background-color: #357ae8;
-  }
+}
 
 .login a {
     color: var(--blue);
@@ -116,7 +116,6 @@ flex-direction: column;
 
 /* Menu de navegação */
 .menu {
-    
     width: 100%;
     margin-bottom: 30px;
 }
@@ -173,23 +172,295 @@ flex-direction: column;
     background-color: white;
 }
 
-
 .product-label {
-    
     background-color: var(--blue);
     color: white;
     text-align: center;
     padding: 10px 0;
     font-weight: bold;
-    
 }
+
 .product-label a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
 
-/* Responsividade para dispositivos menores */
+/* Seção de demonstração de produtos */
+.demonstration {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demonstration h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 10px;
+}
+
+.demonstration-topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.demonstration-topics a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cards de produto nas páginas de categoria */
+.products-cards {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.products-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.products-cards img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.title-product {
+    padding: 15px 15px 5px 15px;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.title-product h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.title-product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-product a:hover {
+    color: var(--blue);
+}
+
+.products-cards>div:not(.title-product):not(.promo) {
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+/* Informações de preço e promoção */
+.price-card {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 2px;
+}
+
+.pix-card {
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
+}
+
+.promo {
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+}
+
+.promo-2 {
+    font-weight: 600;
+    color: #f44336;
+    margin-bottom: 2px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Página de produto individual */
+.product-pag {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    gap: 30px;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.product-info {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pix,
+.card {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+.price-card-product {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+.pix-card-product {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-card-product {
+    font-size: 14px;
+    color: #666;
+}
+
+.amount {
+    margin-top: 20px;
+}
+
+.amount button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount button:hover {
+    background-color: #3446b3;
+}
+
+.amount button i {
+    margin-right: 10px;
+}
+
+.description {
+    margin: 40px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--darkgray);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.atendimento-info {
+    margin-bottom: 20px;
+}
+
+.social-section {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons .fi-brands-youtube {
+    color: #FF0000;
+}
+
+.social-icons .fi-brands-instagram {
+    color: #E1306C;
+}
+
+.social-icons .fi-brands-facebook {
+    color: #4267B2;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .demonstration {
+        padding: 20px;
+    }
+
+    .demonstration-topics {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .product-card {
         width: 48%;
@@ -204,9 +475,18 @@ flex-direction: column;
         width: 100%;
         margin-top: 10px;
     }
+
+    .products-cards {
+        width: 45%;
+        min-width: 250px;
+    }
+
+    .product-pag {
+        padding: 20px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .product-card {
         width: 100%;
     }
@@ -218,187 +498,16 @@ flex-direction: column;
     .menu ul li {
         padding: 10px 0;
     }
-}
 
+    .products-cards {
+        width: 100%;
+    }
 
-.demonstration {
-    padding: 50px;
-}
+    .product-pag {
+        flex-direction: column;
+    }
 
-.demonstration h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-
-.products-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 240px;
-    height: 410px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 20px 20px rgba(0, 0, 0, 0.103);
-}
-
-.products-cards img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.title-product {
-    padding: 0px 10px;
-    margin-bottom: 25px;
-    text-align: center;
-    height: 20%;
-}
-
-.demonstration-topics {
-    display: flex;
-    gap: 90px;
-
-}
-
-.demonstration-topics a{
-    padding-bottom: 25px;
-    text-decoration: none;
-    color: black;
-}
-
-.promo {
-    background-color: rgb(71, 71, 71);
-    border: 2px solid #464646;
-    text-align: center;
-}
-
-.promo-2 {
-    color: rgb(255, 255, 255);
-}
-
-.price-card {
-    color: var(--blue);
-    padding-left: 20px;
-}
-
-.pix-card {
-    color: var(--gray);
-    padding-left: 20px;
-}
-
-.date {
-    color: white;
-}
-
-.footer {
-    background-color: var(--darkgray);
-    padding: 20px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.atendimento-info {
-    margin-bottom: 15px;
-}
-
-.social-section {
-    margin-top: 10px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #0078d7;
-}
-
-/* Caso os ícones da Flaticon não apareçam, você pode usar os do Font Awesome que já está importado */
-.social-icons .fi-brands-youtube {
-    color: #FF0000;
-}
-
-.social-icons .fi-brands-instagram {
-    color: #E1306C;
-}
-
-.social-icons .fi-brands-facebook {
-    color: #1877F2;
-}
-
-/*===================================================================================================================================================================== */
-.product-pag{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-right: 20px;
-}
-.product-image img{
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 150px;
-}
-.product-info h2{
-    padding-bottom: 45px;
-}
-
-.pix{
-    font-size: 30px;
-}
-.card{
-    font-size: 30px;
-}
-
-.price-card-product{
-    color: var(--blue);
-}
-
-.pix-card-product{
-    color: var(--gray);
-    padding-left: 20px;
-    font-size: 15px;
-    padding-bottom: 25px;
-
-}
-
-.price-card-product{
-    color: var(--blue);
-}
-
-.card-card-product{
-    color: var(--gray);
-    padding-left: 20px;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-.amount button{
-    padding: 15px 100px;
-    border-radius: 5px;
-    background-color: rgb(180, 175, 175);
-}
-.amount button p{
-    font-size: 25px;
-    color: var(--blue);
-}
-.description{
-    margin: 40px;
+    .product-image {
+        margin-bottom: 20px;
+    }
 }

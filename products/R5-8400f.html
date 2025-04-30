@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNE Parts</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cart-styles.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <!-- Adicione o link para Font Awesome para o ícone do carrinho -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
+
 </head>
 
 <body>
     <header>
         <div class="content">
             <nav>
-                <h1 class="brand">BNE <strong>PARTS</strong></h1>
+                <a href="../index.html">
+                    <h1 class="brand">BNE <strong>PARTS</strong></h1>
+                </a>
                 <div class="user">
                     <p>Visitantes</p>
-                    <div class="login"><a href="../operational/login.html"target="_blank">Login/</a><a href="../operational/registrar.html"target="_blank">Registrar-se</a></div>
+                    <div class="login"><a href="../operational/login.html" target="_blank">Login/</a><a
+                            href="../operational/registrar.html" target="_blank">Registrar-se</a></div>
                 </div>
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="Pesquisar...">
@@ -31,35 +35,39 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="../products/computadores.html"target="_blank">Computadores</a></li>
-                    <li><a href="../products/perifericos.html"target="_blank">Perifericos</a></li>
-                    <li><a href="../products/hardware.html"target="_blank">Hardware</a></li>
-                    <li><a href="../products/audio.html"target="_blank">Áudio</a></li>
-                    <li><a href="../products/monitores.html"target="_blank">Monitores</a></li>
-                    <li><a href="../products/espaco_gamer.html"target="_blank">Espaço Gamer</a></li>
+                    <li><a href="../products/computadores.html" target="_blank">Computadores</a></li>
+                    <li><a href="../products/perifericos.html" target="_blank">Perifericos</a></li>
+                    <li><a href="../products/hardware.html" target="_blank">Hardware</a></li>
+                    <li><a href="../products/audio.html" target="_blank">Áudio</a></li>
+                    <li><a href="../products/monitores.html" target="_blank">Monitores</a></li>
+                    <li><a href="../products/espaco_gamer.html" target="_blank">Espaço Gamer</a></li>
                 </ul>
             </div>
     </header>
-    
+
     <div class="product-pag">
         <div class="product-image">
-        <img src="../img/processador_amd_ryzen_5_8400f_4_2ghz_4_7ghz.jpg"alt="R5-8400">
+            <img src="../img/processador_amd_ryzen_5_8400f_4_2ghz_4_7ghz.jpg" alt="R5-8400">
         </div>
         <div class="product-info">
             <h2>Processador AMD Ryzen 5 8400F, 4.2GHz (4.7GHz Turbo), 6-Cores 12-Threads, AM5
             </h2>
 
-            <div class="pix"> 
+            <div class="pix">
                 <p class="price-card-product">R$939,90</p>
-                <p class="pix-card-product">à vista no PIX</p> 
+                <p class="pix-card-product">à vista no PIX</p>
             </div>
-            <div class="card"> 
+            <div class="card">
                 <p class="price-card-product">R$1049,74</p>
-                <p class="card-card-product">No Cartão</p> 
+                <p class="card-card-product">No Cartão</p>
             </div>
 
             <div class="amount">
-                <button><p>COMPRAR</p></button>
+                <button class="add-to-cart-btn" data-id="r5-8400f"
+                    data-name="Processador AMD Ryzen 5 8400F, 4.2GHz (4.7GHz Turbo), 6-Core 12-Threads, Cache 18MB, AM5"
+                    data-price="899.99" data-img="../img/processador_amd_ryzen_5_8400f_am5_16439_10678.jpg">
+                    <i class="fas fa-shopping-cart"></i> COMPRAR
+                </button>
             </div>
         </div>
     </div>
@@ -68,7 +76,7 @@
             <p>Atendimento: <a href="mailto:atendimento@bne.parts.com.br">atendimento@bne.parts.com.br</a></p>
             <p>Segunda à sexta-feira: das 9:30 às 11:00 e das 14:00 às 16:00</p>
         </div>
-        
+
         <div class="social-section">
             <p>Siga BNE Parts nas redes sociais:</p>
             <div class="social-icons">
@@ -84,7 +92,5 @@
             </div>
         </div>
     </div>
+    <script src="../js/cart.js"></script>
 </body>
-
-
-
