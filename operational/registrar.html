@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNE Parts - Cadastro</title>
+    <link rel="stylesheet" href="../css/styles_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand">BNE <strong>PARTS</strong></h1>
+        
+        <div class="register-container">
+            <h2>Complete seu cadastro</h2>
+            <p>Preencha os campos abaixo para finalizar seu cadastro e aproveitar todos os benefícios.</p>
+            
+            <form id="register-form-complete">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="usuario">Nome de usuário</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-outline" id="btnVoltar">Voltar</button>
+                    <button type="submit" class="btn btn-primary">Finalizar cadastro</button>
+                </div>
+            </form>
+            
+            <div class="benefits">
+                <h3>Benefícios do seu cadastro:</h3>
+                <ul>
+                    <li><i class="fa fa-check"></i> Realizar compras mais rápido</li>
+                    <li><i class="fa fa-check"></i> Rastrear seus pedidos com facilidade</li>
+                    <li><i class="fa fa-check"></i> Ter um histórico de todas as suas compras</li>
+                    <li><i class="fa fa-check"></i> Receber ofertas exclusivas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tabela de Usuários -->
+        <div class="users-table-container">
+            <h2>Usuários Cadastrados</h2>
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Usuário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTableBody">
+                    <!-- Os usuários serão inseridos aqui dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>

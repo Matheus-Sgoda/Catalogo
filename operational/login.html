@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNE Parts - Login</title>
+    <link rel="stylesheet" href="../css/styles_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand">BNE <strong>PARTS</strong></h1>
+        
+        <div class="login-container">
+            <div class="login-section">
+                <h2>Faça seu login</h2>
+                <p>Seja bem vindo de volta! Faça o login para ter acesso a sua conta.</p>
+                
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+            
+            <div class="divider">
+                <span>ou</span>
+            </div>
+            
+            <div class="register-section">
+                <h2>Cadastre-se</h2>
+                <p>Crie sua conta hoje para curtir a experiência de uma compra personalizada.</p>
+                
+                <button type="button" class="btn btn-secondary" id="btnCriarConta">CRIAR CONTA</button>
+                
+                <div class="benefits">
+                    <h3>Realizando seu cadastro hoje você poderá:</h3>
+                    <ul>
+                        <li><i class="fa fa-check"></i> Realizar compras mais rápido</li>
+                        <li><i class="fa fa-check"></i> Rastrear seus pedidos com facilidade</li>
+                        <li><i class="fa fa-check"></i> Ter um histórico de todas as suas compras</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
