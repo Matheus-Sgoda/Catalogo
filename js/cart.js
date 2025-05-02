@@ -1,4 +1,3 @@
-// Objeto para gerenciar o carrinho de compras
 const cart = {
     items: [],
     total: 0,
